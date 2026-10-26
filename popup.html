@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SEC Filing PDF</title><link rel="stylesheet" href="styles.css"></head>
+<body class="popup"><main><header><img src="icon48.png" width="32" height="32" alt=""><div><h1>SEC Filing PDF</h1><p>Filing to paper, cleanly.</p></div></header>
+<p id="filing" class="filing">Checking the current tab...</p>
+<form id="settings"><div class="pair"><label>Paper<select name="paper"><option value="letter">US Letter</option><option value="a4">A4</option></select></label><label>Orientation<select name="orientation"><option value="portrait">Portrait</option><option value="landscape">Landscape</option></select></label></div>
+<label>Page layout<select name="pagination"><option value="original">Original source pages</option><option value="fitted">Fit source pages to paper</option><option value="continuous">Continuous flow</option></select></label>
+<p class="hint">Original source pages preserve native sizes and margins for positioned filings. Paper settings apply to fitted and continuous layouts.</p>
+<label>Margins<select name="margin"><option value="0.35">Narrow (0.35 in)</option><option value="0.5">Standard (0.5 in)</option><option value="0.25">Minimal (0.25 in)</option></select></label>
+<label class="check"><input type="checkbox" name="compact" checked><span>Compact large images</span></label>
+<p class="hint">Keeps text searchable. Resizes large illustrations to approximately 150 dpi; may soften text inside images.</p>
+<button id="export" type="submit" disabled>Export PDF</button><p id="status" role="status" aria-live="polite"></p></form>
+<footer>Processed locally. No uploads or account.</footer></main><script src="popup.js" type="module"></script></body></html>

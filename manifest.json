@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "SEC Filing PDF",
+  "version": "1.2.0",
+  "minimum_chrome_version": "118",
+  "description": "Export SEC filings as compact, searchable PDFs with adaptive page sizing.",
+  "permissions": [
+    "activeTab",
+    "debugger",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Export SEC filing to PDF"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
